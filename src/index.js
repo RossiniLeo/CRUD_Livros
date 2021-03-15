@@ -34,7 +34,7 @@ let livros = [
 //tratamento de requisições POST
 app.post('/livros', (req, res, next) => {
     const livro = req.body;
-    livros.push({id: idLivro +=1, titulo: livro.isbn, livro.titulo, 
+    livros.push({id: idLivro +=1, isbn: livro.isbn, titulo: livro.titulo, 
         descricao: livro.descricao, edicao: livro.edicao, autor: livro.autor});
         console.log(livros);
         res.status(201).json(livros);
